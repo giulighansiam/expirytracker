@@ -15,7 +15,7 @@
 	
 	var amt = document.getElementById("vit_pills").value/document.getElementById("vit_perday").value;
 	var newdate = new Date();
-	newdate.setDate(expdate.getUTCDate()-amt);
+	newdate.setDate(expdate.getUTCDate()+amt);
 	
 	document.getElementById("result").innerHTML="YYYY-MM-DD: "+newdate.getUTCFullYear()+"-"+(newdate.getUTCMonth()+1)+"-"+newdate.getUTCDate();
 	//note javascript dates are 1-31 for days but 0-11 for months
