@@ -24,15 +24,29 @@
 	
  }
  function lotreset(){
+	document.getElementById("result").innerText="inlotreset";
 	document.getElementById("lot_form").reset();
  }
  function lotcalc(){
+	document.getElementById("result").innerText="in lotcalc";
 	var format = document.getElementById("lot_format").value;
+	var lotnum = document.getElementById("lot_num").value;
 	var months = document.getElementById("lot_months").value;
+	var monthsms = months*86400000;
+	var mandate = new Date();
+	var expdate = new Date();
+	var year, month, day;
 	
 	switch(format){
-		case(MMDDYY):
+		case 'YYDDD':
+			year=lotnum.substring(0,2);
+			day=lotnum.substring(3);
+			document.getElementById("result").innerText="year: "+year+". day: "+day;
+			break;
+		
+		default:
+			document.getElementById("result").innerText="x";
 			
 	}
 	
- }
+ }}
