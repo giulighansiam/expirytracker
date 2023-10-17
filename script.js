@@ -1,6 +1,4 @@
-
- 
- function vitreset(){
+function vitreset(){
 	document.getElementById("vit_form").reset();
 	document.getElementById("result").innerText="";
  }
@@ -27,7 +25,7 @@
 	document.getElementById("result").innerText="inlotreset";
 	document.getElementById("lot_form").reset();
  }
- function lotcalc(){
+ /*function lotcalc(){
 	document.getElementById("result").innerText="in lotcalc";
 	var format = document.getElementById("lot_format").value;
 	var lotnum = document.getElementById("lot_num").value;
@@ -49,4 +47,4 @@
 			
 	}
 	
- }
+ }*/
