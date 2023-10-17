@@ -1,4 +1,4 @@
- //var julian[][]
+
  
  function vitreset(){
 	document.getElementById("vit_form").reset();
@@ -49,4 +49,4 @@
 			
 	}
 	
- }}
+ }
